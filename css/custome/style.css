@@ -1,0 +1,534 @@
+button {
+    cursor: pointer;
+}
+
+/* Show nav */
+
+.header-top {
+    background-color: rgb(24, 24, 214);
+    display: none;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    position: fixed;
+    z-index: 5;
+    
+}
+
+.click-icon-box {
+    height: 40px;
+    width: 55px;
+    float: right;
+    /* border: 1px solid white; */
+    position: relative;
+    cursor: pointer;
+}
+
+.lines {
+    background-color: white;
+    margin: 5px;
+    height: 1px;
+}
+
+.line-one {
+    position: absolute;
+    width: 80%;
+    top: 1px;
+}
+
+.line-two {
+    position: absolute;
+    width: 80%;
+    top: 12.5px;
+}
+
+.line-three {
+    position: absolute;
+    width: 80%;
+    top: 25px;
+}
+
+/* Animate Icon */
+.remove-me {
+    animation-name: remove-me;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes remove-me {
+    to {transform: scale(0)}
+}
+
+
+.animate-line-one {
+    animation-name: animate-line-one;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes animate-line-one {
+    70% {top: 12.5px;}
+    100%{
+        top: 12.5px;
+        transform: rotate(45deg)
+    }
+}
+
+.animate-line-three {
+    animation-name: animate-line-three;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes animate-line-three {
+    70% {top: 12.5px;}
+    100%{
+        top: 12.5px;
+        transform: rotate(-45deg)
+    }
+}
+
+.back-norm-one {
+    animation-name: back-norm-one;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes back-norm-one {
+    70% {
+        top: 12.5px;
+        transform: rotate(-45deg)
+    }
+    100%{top: 1px;}
+}
+
+.back-norm-two {
+    animation-name: back-norm-two;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes back-norm-two {
+    to {transform: scale(1)}
+}
+
+.back-norm-three {
+    animation-name: back-norm-three;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes back-norm-three {
+    70% {
+        top: 12.5px;
+        transform: rotate(45deg)
+    }
+    100%{top: 25px;}
+}
+
+/* End Of of Icon Animation */
+
+
+/* End Of Show Nav */
+
+/* Nav Section */
+
+.header-cont {
+    height: auto;
+    background-color: rgb(24, 24, 214);
+    position: fixed;
+    top: 0;
+    z-index: 5;
+} 
+
+.header-col {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.logo-box {
+    height: auto;
+    /* background-color: black; */
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    flex: 1;
+    /* background-color: aqua; */
+    text-align: center;
+}
+
+.text {
+    flex: 4;
+    /* background-color: tomato; */
+    font-size: 20px;
+}
+
+.nav-bar {
+    height: auto;
+    /* background-color: teal; */
+    flex: 6;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-bar-last-child {
+    display: none;
+}
+
+.nav-item {
+    flex: 1;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.hori-line {
+    margin: 0;
+    height: 1px !important;
+    width: 0%;
+    transition: all 0.5s;
+    background-color: white;
+}
+
+.nav-item:hover .hori-line {
+    width: 90%;
+}
+
+
+/* End of Nav Section */
+
+/* Bunner */
+.bunner {
+    height: 625px;
+    background-color: rgb(24, 24, 214);
+    color: white;
+}
+
+.bunner-inner-cont {
+    /* background: red; */
+    /* height: 300px; */
+    margin-top: 200px;
+}
+
+.bunner-inner-cont div {
+    /* background: gray; */
+}
+
+.arrow-box {
+    /* height: 100px; */
+}
+
+.arrow-box-inner {
+    /* background: blue !important; */
+    width: 30%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.arrow-left {
+    flex: 1;
+    text-align: center;
+    color: white;
+}
+
+.arrow-right {
+    flex: 1;
+    text-align: center;
+    color: white;
+}
+
+.center-it {
+    flex: 3;
+    text-align: center;
+    color: white;
+}
+
+.btn-bunner-box {
+    width: 200px;
+    margin: auto;
+}
+
+.btn-bunner-custom {
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    background: transparent;
+    outline: none;
+    border: 1.5px solid white;
+    color: white;
+}
+
+/* End Of Bunner */
+
+/* Section One */
+.section-one-cont {
+    background: gray;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.what-we-do-btn {
+    width: 40%;
+}
+
+.sect-one {
+    /* background: red; */
+}
+
+/* End Of Section One */
+
+.section-two-cont {
+    background-color: rgb(24, 24, 214);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: white;
+}
+
+.section-two-icon {
+    margin: auto;
+    width: 70px;
+    text-align: center;
+}
+
+.section-two-header {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 21px;
+}
+
+.section-two-btn-box {
+    width: 20%;
+    margin: auto;
+}
+
+.section-two-btn {
+    width: 100%;
+}
+
+/* Second Nav */
+
+.second-nav-cont {
+    height: auto;
+}
+
+.nav-items-box {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.btn-item {
+    flex: 1;
+    background: transparent;
+    border: 1px solid black;
+    color: black;
+    margin: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.current-btn {
+    background-color : rgb(24, 24, 214);
+    color : white;
+    border : none;
+    outline: 0;
+}
+
+.gallary-cont {
+    /* background-color: blue; */
+}
+
+.gallary-cont :nth-child(even) {
+    background: brown;
+}
+
+.gallary-col {
+    height: 300px;
+    background: burlywood;
+}
+
+/* Animating Images */
+
+.disabled-row {
+    /* display: none !important; */
+}
+
+.disabled-item {
+    animation-name: disabled-item;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes disabled-item {
+    to {
+        transform: scale(0);
+    }
+}
+
+.enabled-item {
+    transform: scale(0);
+    animation-name: enabled-item;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.2s;
+}
+
+@keyframes enabled-item {
+    to {
+        transform: scale(1);
+    }
+}
+
+/* End of Animating Images */
+
+/* End Of Second Nav */
+
+
+/* Map Section */
+.map-cont {
+    background: teal;
+    display: none;
+}
+
+.visit-us {
+    font-size: 20px;
+    color: white;
+}
+
+.map-col {
+    background-color: red;
+    height: 500px;
+}
+
+/* End Of Map Section */
+
+.contact-cont {
+    background-color : rgb(24, 24, 214);
+    color: white;
+}
+
+.contact-text {
+    color: white;
+    font-size: 20px;
+}
+
+
+
+
+/* Responsive Site */
+@media (max-width : 600px) {
+
+    .header-top {
+        display: block !important;
+        background-color : rgb(21, 21, 180);
+    }
+
+    .header-cont {
+        background: transparent;
+        top: 45px;
+        display: none;
+    }
+
+    .temp-show {
+        display: block;
+    }
+
+    .disable-it {
+        display: none;
+    }
+
+    .header-col {
+        display: block;
+        padding-left: 0 !important;
+    }
+
+    .nav-bar {
+        display: block;
+    }
+
+    .show-me {
+        display: flex;
+    }
+
+    .logo-box-top {
+        float: left;
+        display: flex;
+        color: white;
+        overflow: hidden;
+    }
+
+    .logo-box-top-hide {
+        animation-name: logo-box-top-hide;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes logo-box-top-hide {
+        to {transform: scale(0)}
+    }
+
+    .show-nav {
+        overflow: hidden;
+        background-color : rgb(21, 21, 180);
+        width: 0%!important;
+        animation-name: show-nav;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes show-nav {
+        to {
+            width: 65%;
+            border-bottom-right-radius: 15px;
+        }
+    }
+
+    .hide-nav {
+        animation-name: hide-nav;
+        animation-duration: 1s;
+        animation-delay: 0.1s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes hide-nav {
+        to {
+            width: 0% !important;
+        }
+    }
+
+    .map-col {
+        height: 300px;
+    }
+}
+
+@media (max-width : 577px) {
+    .arrow-box-inner {
+        width: 80%;
+    }
+
+    .section-two-btn-box {
+        width: 90%;
+    }
+}
+
+@media (max-width : 389px) {
+    .arrow-box-inner {
+        width: 100%;
+    }
+
+    .section-two-btn-box {
+        width: 90%;
+    }
+}
