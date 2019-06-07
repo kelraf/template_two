@@ -4,7 +4,7 @@ $(document).ready(function() {
         $("#animate-line-one").toggleClass("animate-line-one");
         $("#animate-line-three").toggleClass("animate-line-three");
 
-
+ 
         // show-nav hide-nav
         $("#header-cont").toggleClass("temp-show");
         $("#nav-bar").toggleClass("show-nav");
